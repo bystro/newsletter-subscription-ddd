@@ -1,0 +1,10 @@
+default:
+  suites:
+    default:
+      paths:
+        features: features
+        bootstrap: "%paths.base%/tests/features"
+      contexts: [
+       App\Tests\Features\Newsletter\SubscriptionCreationContext,
+        App\Tests\Features\Newsletter\SubscriptionConfirmationContext
+        ]
