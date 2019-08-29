@@ -50,9 +50,6 @@
     "guzzlehttp/psr7": {
         "version": "1.6.1"
     },
-    "league/tactician": {
-        "version": "v1.0.3"
-    },
     "mikey179/vfsstream": {
         "version": "v1.6.7"
     },
