@@ -15,7 +15,7 @@ final class ConfirmSubscriptionHandler
         $this->repository = $repository;
     }
 
-    public function handle(ConfirmSubscriptionCommand $command): void
+    public function __invoke(ConfirmSubscriptionCommand $command): void
     {
         $subscription = $this->repository->getByEmailAddressAndOptionallyBySubscriptionId(
             $command->emailAddress(),

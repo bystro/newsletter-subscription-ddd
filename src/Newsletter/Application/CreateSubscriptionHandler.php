@@ -16,7 +16,7 @@ final class CreateSubscriptionHandler
         $this->subscriptionRepository = $subscriptionRepository;
     }
 
-    public function handle(CreateSubscriptionCommand $command): void
+    public function __invoke(CreateSubscriptionCommand $command): void
     {
         $this->subscriptionRepository->add(
             Subscription::create(

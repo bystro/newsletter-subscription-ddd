@@ -13,5 +13,6 @@
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
 
+/bin/
 /data/
 /tests/unit/reports/

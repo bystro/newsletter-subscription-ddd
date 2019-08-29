@@ -38,7 +38,7 @@ class SubscriptionConfirmationContext implements Context
     {
         $command = new CreateSubscriptionCommand($emailAddress, $subscriptionId);
         $handler = new CreateSubscriptionHandler($this->repository);
-        $handler->handle($command);
+        $handler($command);
         
         $this->subscription = $this->repository->getByEmailAddressAndOptionallyBySubscriptionId($emailAddress);
     }
@@ -119,6 +119,6 @@ class SubscriptionConfirmationContext implements Context
     private function executeConfirmationCommand(ConfirmSubscriptionCommand $command): void
     {
         $handler = new ConfirmSubscriptionHandler($this->repository);
-        $handler->handle($command);
+        $handler($command);
     }
 }

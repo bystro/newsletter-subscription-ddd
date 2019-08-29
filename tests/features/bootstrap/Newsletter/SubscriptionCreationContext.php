@@ -42,7 +42,7 @@ class SubscriptionCreationContext implements Context
     {
         $command = new CreateSubscriptionCommand($this->emailAddress);
         $handler = new CreateSubscriptionHandler($this->repository);
-        $handler->handle($command);
+        $handler($command);
     }
 
     /**

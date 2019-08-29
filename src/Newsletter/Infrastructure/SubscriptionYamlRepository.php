@@ -117,7 +117,7 @@ final class SubscriptionYamlRepository implements SubscriptionRepository
 
     private function setFilename(?string $filename = null): void
     {
-        $this->filename = null === $filename ? getcwd() . '/data/subscription/data.yml' : $filename;
+        $this->filename = null === $filename ? '/var/www/html/app/data/subscription/data.yml' : $filename;
     }
 
     /**
