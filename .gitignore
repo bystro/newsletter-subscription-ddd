@@ -16,3 +16,4 @@
 /bin/
 /data/
 /tests/unit/reports/
+.deptrac.cache

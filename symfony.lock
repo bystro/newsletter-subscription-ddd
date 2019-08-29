@@ -95,6 +95,9 @@
             "config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "sensiolabs-de/deptrac-shim": {
+        "version": "0.5.0"
+    },
     "symfony/browser-kit": {
         "version": "v4.3.3"
     },
