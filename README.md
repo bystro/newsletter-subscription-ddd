@@ -9,7 +9,7 @@ docker-compose up -d
 
 When build process is finished, just enter into php container and install dependencies using composer
 ```
-docker-compose up -d --force-recreate --build
+docker exec -it php-newsletter bash
 composer install
 ```
 
