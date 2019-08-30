@@ -1,5 +1,14 @@
 ### Sample project using Domain Driven Design approach. Project is focused on business domain - newsletter subscription
 
+1. DDD
+* Layered Architecture
+* Value Object
+* Aggregate
+* Factory - implemented as Factory method
+2. Command and Command Bus patterns
+3. TDD
+4. BDD
+
 #### Instalation
 If you have Docker-compose installed just enter .docker folder end execute
 ```
